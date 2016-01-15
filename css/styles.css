@@ -13,3 +13,7 @@
 .jumbotron {
   display: none;
 }
+
+.imganswer {
+  float: right;
+}

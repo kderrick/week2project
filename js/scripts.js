@@ -6,8 +6,10 @@ $(function() {
     var health = $('input[name=question3radio]:checked').val();
     var activity = $('input[name=question4radio]:checked').val();
     var clothing = $('input[name=question5radio]:checked').val();
+    var beverage = $('input[name=question6radio]:checked').val();
+    var annoying = $('input[name=question7radio]:checked').val();
 
-    var questions = [temperature, attitude, health, activity, clothing];
+    var questions = [temperature, attitude, health, activity, clothing, beverage, annoying];
 
     var beach = 0;
     var city = 0;

@@ -1,5 +1,8 @@
-$(function() {
-  $("form#quiz").submit(function(event) {
+$(document).ready(function() {
+  $("#blanks form").submit(function(event) {
+
+    person1Input = $("input#person1").val();
+    $(".person").text(person1Input);
 
     var temperature = $('input[name=question1radio]:checked').val();
     var attitude = $('input[name=question2radio]:checked').val();
@@ -40,11 +43,8 @@ $(function() {
 
     };
 
-
-
     event.preventDefault()
 
   });
-
 
 });

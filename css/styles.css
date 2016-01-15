@@ -13,3 +13,16 @@
 .imganswer {
   float: right;
 }
+
+.jumbotron {
+  margin-top: 100px;
+  background-color: #A9BCF5;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  background-color: #669999;
+}

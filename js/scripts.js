@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
   $("form#quiz").submit(function(event) {
 
     var temperature = $('input[name=question1radio]:checked').val();
@@ -18,20 +18,27 @@ $(document).ready(function() {
         beach++;
       } else if (question === 'answer2') {
         city++;
-      }else if (question === 'answer3') {
+      }else {
         mountain++;
-      } else {
-        alert("Please answer all questions")
       }
     });
 
     if((beach > city) && (beach > mountain)) {
-      $(".warm-beach").fadeIn('slow');
+      $("#warm-beach").fadeIn('slow');
+      $("#coldmountain").hide("#coldmountain");
+      $("#temperatecity").hide("#temperatecity");
     } else if ((city > beach) && (city > mountain)) {
-      $(".temperatecity").fadeIn('slow');
+      $("#temperatecity").fadeIn('slow');
+      $("#warm-beach").hide("#warm-beach");
+      $("#coldmountain").hide("#coldmountain");
     } else {
-      $(".coldmountain").fadeIn('slow');
+      $("#coldmountain").fadeIn('slow');
+      $("#warm-beach").hide("#warm-beach");
+      $("#temperatecity").hide("#temperatecity");
+
     };
+
+
 
     event.preventDefault()
 

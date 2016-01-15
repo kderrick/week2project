@@ -1,16 +1,12 @@
-.warm-beach {
+#warm-beach {
   display: none;
 }
 
-.temperatecity {
+#temperatecity {
   display: none;
 }
 
-.coldmountain {
-  display: none;
-}
-
-.jumbotron {
+#coldmountain {
   display: none;
 }
 

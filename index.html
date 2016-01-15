@@ -19,14 +19,14 @@
           <label for="Question1">What temperature do you prefer?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="question1radio" id="question1radio" value="answer1">
+              <input type="radio" name="question1radio" id="question1radio" checked value="answer1">
               Hot
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question1radio" id="question1radio" value="answer2">
-              Balmy
+              Temperate
             </label>
           </div>
           <div class="radio">
@@ -40,7 +40,7 @@
           <label for="Question2">Choose the attitude that describes you best.</label>
           <div class="radio">
             <label>
-              <input type="radio" name="question2radio" id="question2radio" value="answer1">
+              <input type="radio" name="question2radio" id="question2radio"checked value="answer1">
               Laid Back
             </label>
           </div>
@@ -56,30 +56,99 @@
               Adventurous
             </label>
           </div>
+        </div> <!--Question 2 div end-->
+        <div class="form-group"><!--Question 3 div start-->
+          <label for="Question3">What sort of physical health are you in?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3radio" id="question3radio" checked value="answer1">
+              Poor
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3radio" id="question3radio" value="answer2">
+              Average
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3radio" id="question3radio" value="answer3">
+              Great
+            </label>
+          </div>
         </div> <!--Question 3 div end-->
-        <div class="form-group"><!--Question 2 div start-->
-          <label for="Question2">Choose the attitude that describes you best.</label>
+        <div class="form-group"><!--Question 4 div start-->
+          <label for="Question4">What activity would you prefer most?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="question2radio" id="question2radio" value="answer1">
-              Laid Back
+              <input type="radio" name="question4radio" id="question4radio" checked value="answer1">
+              Relaxing by the beach
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question2radio" id="question2radio" value="answer2">
-              Outgoing
+              <input type="radio" name="question4radio" id="question4radio" value="answer2">
+              Exploring a new city
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question2radio" id="question2radio" value="answer3">
-              Adventurous
+              <input type="radio" name="question4radio" id="question4radio" value="answer3">
+              A mountainous excursion.
             </label>
           </div>
-        </div> <!--Question 3 div end-->
-        <button type="submit" name="submit" class="btn btn-secondary">Submit</button>
+        </div> <!--Question 4 div end-->
+        <div class="form-group"><!--Question 5 div start-->
+          <label for="Question5">What would you prefer to wear?></label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5radio" id="question5radio"checked value="answer1">
+              Nothing at all!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5radio" id="question5radio" value="answer2">
+              A plaid overshirt.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5radio" id="question5radio" value="answer3">
+              A heavy parka.
+            </label>
+          </div>
+        </div> <!--Question 5 div end-->
+        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
       </form>
+      <div class="jumbotron text-center"><!--Bottom section start-->
+        <h1>And the place you should visit is...</h1>
+      </div><!--End jumbotron div-->
+
+          <!--Start hidden images/text for answer  -->
+      <div class="warm-beach"> <!--Start warm beach-->
+        <h1>A relaxing tropical getaway!</h1>
+        <img src="https://robertfinkelstein.files.wordpress.com/2009/06/beautiful-beach.jpg" alt="Picture a warm beach"/>
+        <p>
+        Based off the answers provided, we have determined that the best idea for you would be to take a trip to relaxing tropical getaway.
+        </p>
+      </div><!--end warm beach-->
+      <div class="temperatecity"><!--Start temp cty-->
+        <h1>An exploratory trip to a bustling city!</h1>
+        <img src="https://www.sarahlawrence.edu/media/student-life/600x400xnyc_main.jpg.pagespeed.ic.loHJhs5rEn.jpg" alt="Picture of a busy city" />
+        <p>
+        Based off the answers provided, we have determined that the best idea for you would be to take a trip to an exciting big city.
+        </p>
+      </div><!--endtemp cty-->
+      <div class="coldmountain"> <!--Start cold mountain-->
+        <h1>An adventurous trip to an awe inspiring mountain.</h1>
+        <img src="http://www.renekisselbachphotography.com.au/img/s5/v130/p869497782-4.jpg" alt="Picture of sublime mountain" />
+        <p>
+        Based off the answers provided, we have determined that the best idea for you would be to take a trip to an awe inspiring mountain.
+        </p>
+      </div> <!--end cold mountain-->
+
     </div><!--First Div end-->
   </body>
 </html>

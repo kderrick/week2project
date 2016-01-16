@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $("#blanks form").submit(function(event) {
 
-    person1Input = $("input#person1").val();
+    person1Input = $("input#person1").val(); <!--WHY WONT THIS WORK AS NON GLOBAL VAR-->
     $(".person").text(person1Input);
 
     var temperature = $('input[name=question1radio]:checked').val();
@@ -17,7 +17,9 @@ $(document).ready(function() {
     var beach = 0;
     var city = 0;
     var mountain = 0;
-
+// for (var i = 0; i <= questions.length; i +=1) {
+//
+// }
     questions.forEach(function(question) {
       if (question === 'answer1') {
         beach++;
